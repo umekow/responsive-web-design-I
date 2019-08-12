@@ -215,22 +215,19 @@ footer{
     */
 .container {
     width: 90%; 
+     
 }
 
-.logo{
-   width: 100%; 
+img.header-img{
+    display:none; 
 }
 
-logo-container {
+div.logo-container {
     display:flex; 
     justify-content: center; 
-    margin:0%;
+    
 }
-.nav {
-    width: 100%; 
-    display:flex; 
-    justify-content: space-between;  
-}
+
 
 }
 
