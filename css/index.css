@@ -178,7 +178,8 @@ header, .section3{
 /*contact (index.html)*/
 .contact{
 	display: flex; 
-	flex-direction: column; 
+    flex-direction: column; 
+    align-items:flex-start; 
 	justify-content: space-between; 
 }
 
@@ -187,6 +188,10 @@ header, .section3{
 .facts{
 	display:flex; 
 	justify-content: space-between; 
+}
+
+.services-info-img{
+    max-width:75%;
 }
 
 .facts ul{
@@ -248,10 +253,12 @@ div.logo-container {
 
 @media only screen and (max-width: 500px) {
     .container{
-
+    width: 100%; 
+    margin: 0%; 
     }
-    div.navbar{
-        flex-direction:column; 
+    .navbar{
+        display:flex; 
+        flex-direction:column-reverse; 
     }
     nav{
         display:flex; 
