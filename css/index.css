@@ -1,3 +1,300 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	display:flex; 
+	flex-direction: column; 
+	width:  80%; 
+	margin:auto; 
+    padding: 40px 0px; 
+    align-items:center;
+}
 
 
+/*images*/
+.services-header-img, middle-img{
+	width:100%; 
+}
+
+
+/*nav*/
+nav{
+	display:flex; 
+	justify-content: space-around; 
+}
+
+nav a {
+	text-decoration: none; 
+    color: lightgray; 
+    font-size: 20px; 
+    font-weight:bold; 
+}
+
+
+/*index html*/
+.index{
+	font-size: 100px; 
+	text-align: center; 
+}
+
+
+/*buttons*/
+button{
+	background: white; 
+	border: 1px solid black; 
+	padding: 10px 50px; 	
+}
+
+button a {
+	text-decoration: none; 
+	color: black; 
+}
+
+.column button{
+	border-radius: 5px; 
+}
+
+/* two divs for display title and round image(index.html)*/
+.title{
+	display:flex;
+	padding: 80px 0px; 
+	justify-content: space-between;
+	
+}
+.title div {
+	text-align: center; 
+	width: 40%;
+}
+
+/*sections*/
+section{
+	padding: 60px 0px; 
+}
+
+.section2, .section3 {
+	display:flex; 
+}
+
+header, .section3{
+	border-bottom: 1px solid black; 
+}
+
+
+/*services*/
+.services{
+	display:flex; 
+	width:100%; 
+	padding: 20px 0px; 
+	border-bottom: 2px solid black;
+	justify-content: space-between; 
+	flex-wrap: wrap; 
+}
+
+.services div{
+	border: 1px solid black; 
+	background: lightgray; 
+	padding: 20px; 
+	width: 45%; 
+	margin-bottom: 20px; 
+	
+}
+
+.services button{
+	border-radius: 5px; 
+}
+
+
+/*h1 for services.html*/
+.servicesh1{
+	font-size: 30px; 
+
+}
+
+
+/*contact (index.html)*/
+.contact{
+	display: flex; 
+    flex-direction: column; 
+    align-items:flex-start; 
+	justify-content: space-between; 
+}
+
+
+/*facts (services.html)*/
+.facts{
+	display:flex; 
+	justify-content: space-between; 
+}
+
+.services-info-img{
+    max-width:75%;
+}
+
+.facts ul{
+	list-style-type: square; 
+}
+
+.facts div{
+	display:flex; 
+	flex-direction: column; 
+	justify-content: flex-start; 
+}
+
+/*footer for both pages*/
+footer{
+	padding-top:30px; 
+	text-align: center; 
+}
+
+@media only screen and (max-width: 800px) {
+
+    /*
+    container is wided
+    each parent within container is organized into a column
+    no header image just text and button
+    logo is on top 
+    nav spans the entire container
+
+
+    */
+.container {
+    width: 90%;
+    
+     
+}
+
+img.header-img{
+    display:none; 
+}
+
+div.logo-container {
+    display:flex; 
+    justify-content: center; 
+    
+}
+.title{
+    justify-content: center; 
+}
+.title div{
+    text-align:center; 
+    width: 50%; 
+}
+
+.nav{
+    padding-top: 5%; 
+}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .container{
+    width: 100%; 
+    margin: 0%; 
+    }
+    .navbar{
+        display:flex; 
+        flex-direction:column-reverse; 
+    }
+    nav{
+        display:flex; 
+        flex-direction: column; 
+        text-align:center; 
+        border-bottom: 1px solid black; 
+        margin-left: -26.6%; 
+        margin-right: -26.6%; 
+    }
+
+    nav a {
+        padding: 2%; 
+        border-top: 1px solid black; 
+    }
+
+
+    .title div{
+        text-align:center; 
+        width: 80%; 
+    }
+
+    section{
+        display:flex; 
+        flex-direction: column; 
+        justify-content: space-evenly; 
+        padding: 2% 0; 
+    }
+
+    section div{
+        padding: 4% 0; 
+    }
+
+    .services-header-img{
+        width: 100%; 
+        
+    }
+    
+
+}
