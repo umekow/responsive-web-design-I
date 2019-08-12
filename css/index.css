@@ -227,7 +227,17 @@ div.logo-container {
     justify-content: center; 
     
 }
+.title{
+    justify-content: center; 
+}
+.title div{
+    text-align:center; 
+    width: 50%; 
+}
 
+.nav{
+    padding-top: 5%; 
+}
 
 }
 
