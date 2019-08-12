@@ -70,7 +70,8 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column; 
 	width:  80%; 
 	margin:auto; 
-	padding: 40px 0px; 
+    padding: 40px 0px; 
+    align-items:center;
 }
 
 
@@ -216,7 +217,8 @@ footer{
 
     */
 .container {
-    width: 90%; 
+    width: 90%;
+    
      
 }
 
@@ -245,6 +247,9 @@ div.logo-container {
 
 
 @media only screen and (max-width: 500px) {
+    .container{
+
+    }
     div.navbar{
         flex-direction:column; 
     }
@@ -276,7 +281,13 @@ div.logo-container {
     }
 
     section div{
-        padding: 2% 0; 
+        padding: 4% 0; 
     }
+
+    .services-header-img{
+        width: 100%; 
+        
+    }
+    
 
 }
